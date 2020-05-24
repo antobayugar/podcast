@@ -479,7 +479,7 @@ header button:hover {
   width: 100%;
 }
 
-footer {
+.datos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,7 +494,7 @@ footer {
   margin-bottom: 31px;
 }
 
-footer p {
+.datos p {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
   color: #000000;
@@ -502,7 +502,7 @@ footer p {
   margin-bottom: 16px;
 }
 
-footer .footer-iconos i {
+.datos .footer-iconos i {
   width: 16px;
   height: 28px;
 }
