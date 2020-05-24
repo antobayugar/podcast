@@ -1,0 +1,36 @@
+.novedades {
+    position: relative;
+    height: 341px;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .diagonal-nov {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+        transform: skewY(-6deg);
+        transform-origin: bottom right;
+    }
+
+    h2 {
+        position: relative;
+        margin-top: 64px;
+        margin-bottom: 36px;
+        @include titulo;
+        color: $white;
+        text-align: center;
+    }
+
+    .button {
+        position: relative;
+        @include boton;
+        width: 100%;
+    }
+
+}

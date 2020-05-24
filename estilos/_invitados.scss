@@ -1,0 +1,22 @@
+.invitados {
+    position: relative;
+
+    h2 {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 14px;
+        @include titulo;
+        color: $oscuro;
+    }
+
+    .fotos {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .foto-inv {
+            width: 100%;
+        }
+    }
+
+}

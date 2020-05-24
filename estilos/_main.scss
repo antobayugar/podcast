@@ -1,0 +1,102 @@
+main {
+    /*.episodios {
+        position: relative;
+        z-index: 1;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 100%;
+        padding-top: 20%;
+        padding-bottom: 30%;
+
+        h2 {
+            position: relative;
+            @include titulo;
+            color: $white;
+            z-index: 2;
+        }
+
+        .podcasts {
+            position: relative;
+            margin-top: 21px;
+            z-index: 2;
+
+            .pod {
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding-bottom: 11px;
+            }
+        }
+    }
+
+    .episodios::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        content: "";
+        background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+        transform-origin: right;
+        transform: skewY(-5deg);
+    }*/
+
+    /*.venimos {
+        position: relative;
+        z-index: 3;
+        margin-top: -65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .celular {
+            width: 112.5%;
+        }
+
+        .venimos-textos {
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-top: 27px;
+            margin-bottom: 42px;
+
+            h2 {
+                @include titulo;
+                color: $oscuro;
+                margin-bottom: 8px;
+            }
+    
+            p {
+                @include texto;
+                padding-bottom: 12px;
+            }
+
+        }
+        
+    }*/
+
+    /*.invitados {
+        position: relative;
+
+        h2 {
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-bottom: 14px;
+            @include titulo;
+            color: $oscuro;
+        }
+
+        .fotos {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            .foto-inv {
+                width: 100%;
+            }
+        }
+
+    }*/
+
+}

@@ -1,0 +1,50 @@
+@import "./variables";
+
+@mixin type-menu {
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+@mixin titulo {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+@mixin cards {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: $oscuro;
+    text-align: center;
+}
+
+@mixin texto {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    color: $negro;
+    line-height: 22px;
+}
+
+@mixin boton {
+    color: $oscuro;
+    background-color: $turquesa;
+    box-sizing: border-box;
+    border: 0px;
+    height: 48px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 22px;
+}
+
+@mixin gradient {
+    color: $white;
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+}

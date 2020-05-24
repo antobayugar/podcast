@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+@import "navbar";
+@import "body";
+@import "header";
+//@import "main";
+@import "episodios";
+@import "venimos";
+@import "invitados";
+@import "temas";
+@import "novedades";
+@import "footer";
+
+
+* {
+    margin: auto 0;
+    padding: 0;
+    box-sizing: border-box;
+}
