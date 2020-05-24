@@ -13,8 +13,8 @@
         "_venimos.scss",
         "_invitados.scss",
         "_temas.scss",
-        "_novedades.scss",
-        "_footer.scss"
+        "_footer-novedades.scss",
+        "_footer-datos.scss"
     ],
     "names": [],
     "file": "estilos.css"
