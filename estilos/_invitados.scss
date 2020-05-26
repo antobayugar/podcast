@@ -1,5 +1,6 @@
 .invitados {
     position: relative;
+    margin-top: 42px;
 
     h2 {
         margin-left: 16px;
@@ -9,7 +10,7 @@
         color: $oscuro;
     }
 
-    .fotos {
+    .fotos-contenedor {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -18,5 +19,60 @@
             width: 100%;
         }
     }
+}
 
+@media screen and (min-width: 600px) {
+    .invitados {
+        .fotos-contenedor {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .foto-inv {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .invitados {
+        margin-top: 64px;
+
+        h2 {
+            font-size: 48px;
+            line-height: 62px;
+        }
+
+        .fotos-contenedor {
+            margin-top: 36px;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .invitados {
+
+        .fotos-contenedor {
+
+            .foto-inv {
+                width: 33.3%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .invitados {
+        h2 {
+            margin-left: 100px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .invitados {
+        h2 {
+            margin-left: 200px;
+        }
+    }
 }

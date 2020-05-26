@@ -5,6 +5,11 @@
     padding-left: 16px;
     padding-right: 16px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     .diagonal-nov {
         position: absolute;
         top: 0;
@@ -18,19 +23,49 @@
         transform-origin: bottom right;
     }
 
-    h2 {
-        position: relative;
-        margin-top: 64px;
-        margin-bottom: 36px;
-        @include titulo;
-        color: $white;
-        text-align: center;
-    }
+    .contenido {
+        h2 {
+            position: relative;
+            margin-bottom: 36px;
+            @include titulo;
+            color: $white;
+            text-align: center;
+        }
 
-    .button {
-        position: relative;
-        @include boton;
-        width: 100%;
-    }
+        button {
+            position: relative;
+            @include boton;
+            width: 100%;
+        }
 
+        button:hover {
+            @include gradient;
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .novedades {
+        .contenido {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-size: 48px;
+            }
+
+            button {
+                @include boton-desktop;
+                width: 345px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .novedades {
+        height: 518px;
+    }
 }

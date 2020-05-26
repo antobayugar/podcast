@@ -1,0 +1,114 @@
+.nosotros {
+    position: relative;
+    z-index: 3;
+    margin-top: -95.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
+    .celular {
+        width: 360px;
+    }
+
+    .venimos-textos {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 27px;
+
+        h2 {
+            @include titulo;
+            color: $oscuro;
+            margin-bottom: 8px;
+        }
+
+        p {
+            @include texto;
+            padding-bottom: 12px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nosotros {
+        .celular {
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .nosotros {
+        margin-top: -70px;
+
+        .celular {
+            width: 350px;
+        }
+
+        .venimos-textos {
+
+            h2 {
+                font-size: 48px;
+            }
+
+            p {
+                @include texto-desktop;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    .nosotros {
+        margin-top: -50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .venimos-textos {
+            margin: 0;
+
+            h2 {
+                margin-bottom: 24px;
+                line-height: 62px;
+            }
+            p {
+                width: 464px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+.nosotros {
+    margin-top: 0px;
+    overflow: visible;
+    align-items: flex-start;
+
+    .celular {
+        margin-top: -168px;
+        width: 457.6px;
+    }
+
+    .venimos-textos {
+    padding-top: 50px;
+    
+        p {
+            width: 464px;
+        }
+    }
+}
+}
+
+@media screen and (min-width:1440px) {
+
+    .nosotros {
+        .venimos-textos {
+padding-left: 62px;
+        }
+    }
+}

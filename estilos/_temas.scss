@@ -4,10 +4,6 @@
     margin-right: 16px;
     margin-bottom: 42px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     h2 {
         @include titulo;
         color: $oscuro;
@@ -15,13 +11,14 @@
 
     .temas-cards {
         margin-top: 24px;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .icon-box {
             display: flex;
             flex-direction: column;
             align-items: center;
-
             margin-bottom: 36px;
 
             .temas-icon {
@@ -32,11 +29,92 @@
 
             h4 {
                 @include cards;
+                width: 288px;
             }
         }
 
         .icon-box:last-child {
             margin-bottom: 0;
         }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .temas {
+        .temas-cards {
+            margin-top: 56px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            .icon-box {
+                width: 50%;
+                margin: 0;
+            }
+
+            .icon-box:nth-of-type(3) {
+                margin-top: 30px;
+            }
+
+            .icon-box:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .temas {
+        margin-top: 64px;
+
+        h2 {
+            font-size: 48px;
+            line-height: 62px;
+        }
+
+        .temas-cards {
+            .icon-box {
+                h4 {
+                    margin-top: 16x;
+                    width: 220px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:900px) {
+    .temas {
+        margin-bottom: 34px;
+
+        .temas-cards {
+
+            .icon-box {
+                width: 25%;
+                margin: 0;
+            }
+
+            .icon-box:nth-of-type(3) {
+                margin-top: 0px;
+            }
+
+            .icon-box:last-child {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .temas {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .temas {
+        margin-left: 200px;
+        margin-right: 200px;
     }
 }

@@ -28,10 +28,10 @@
             </label>
 
             <ul>
-                <li><a href="#">episodios</a></li>
-                <li><a href="#">nosotros</a></li>
-                <li><a href="#">entrevistas</a></li>
-                <li><a href="#">tópicos</a></li>
+                <li><a href="#episodios">episodios</a></li>
+                <li><a href="#nosotros">nosotros</a></li>
+                <li><a href="#entrevistas">entrevistas</a></li>
+                <li><a href="#topicos">tópicos</a></li>
             </ul>
         </div>
     </nav>
@@ -42,14 +42,14 @@
 
         <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
 
-        <button>
+        <button onclick="href='#conoce'" type="button">
             conocé más
         </button>
 
     </header>
 
     <main>
-        <section class="episodios">
+        <section class="episodios" id="episodios">
 
             <div class="diagonal-ep"></div>
 
@@ -70,13 +70,13 @@
 
         </section>
 
-        <section class="venimos">
+        <section class="nosotros" id="nosotros">
 
             <img src="./img/phone.png" alt="" class="celular">
 
             <div class="venimos-textos">
 
-                <h2>De dónde venimos</h2>
+                <h2 id="conoce">De dónde venimos</h2>
 
                 <p>
                     Our posturings, our imagined self-importance, the delusion that we have some privileged position in
@@ -93,10 +93,10 @@
 
         </section>
 
-        <section class="invitados">
+        <section class="invitados" id="entrevistas">
             <h2>Invitadas/os estelares</h2>
 
-            <div class="fotos">
+            <div class="fotos-contenedor">
                 <img src="./img/img1.png" alt="" class="foto-inv">
                 <img src="./img/img2.png" alt="" class="foto-inv">
                 <img src="./img/img3.png" alt="" class="foto-inv">
@@ -107,7 +107,7 @@
 
         </section>
 
-        <section class="temas">
+        <section class="temas" id="topicos">
 
             <h2>Algunos de nuestros temas</h2>
 
@@ -137,7 +137,7 @@
 
         </section>
 
-        
+
 
     </main>
 
@@ -147,26 +147,43 @@
 
             <div class="diagonal-nov"></div>
 
-            <h2>¿Querés las últimas novedades?</h2>
+            <div class="contenido">
 
-            <button class="button">escuchá los episodios</button>
+                <h2>¿Querés las últimas novedades?</h2>
+                <button onclick="href='#episodios'" type="button">escuchá los episodios</button>
+            </div>
+
         </section>
 
         <section class="datos">
 
-        <p>© 2019— Hello blue pale dot</p>
+            <p>© 2019— Hello blue pale dot</p>
 
-        <div class="footer-iconos">
+            <div class="footer-iconos">
 
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>
+                <a href="https://www.spotify.com/ar/" target="_blank">
+                    <i class="fab fa-spotify"></i>
+                </a>
 
-        </div>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
 
-    </section>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://telegram.org/" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+
+            </div>
+
+        </section>
     </footer>
 
 

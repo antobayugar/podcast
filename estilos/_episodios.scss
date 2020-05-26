@@ -2,7 +2,7 @@
     position: relative;
     z-index: 1;
     height: 911.5px;
-    
+
     .diagonal-ep {
         position: absolute;
         top: 0;
@@ -14,13 +14,13 @@
         margin: 0;
         background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
         transform: skewY(-6deg);
-        transform-origin: top right ;
+        transform-origin: top right;
     }
 
     h2 {
         position: relative;
-        padding-left: 16px;
-        padding-right: 16px;
+        margin-left: 16px;
+        //padding-right: 16px;
         padding-top: 64px;
         @include titulo;
         color: $white;
@@ -30,8 +30,8 @@
     .podcasts {
         position: relative;
         margin-top: 21px;
-        padding-left: 11px;
-    padding-right: 11px;
+        margin-left: 11px;
+        margin-right: 11px;
         z-index: 2;
 
         .pod {
@@ -47,16 +47,110 @@
     }
 }
 
-/*.episodios::after {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: "";
-    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-    transform-origin: right;
-    transform: skewY(-5deg);
-}*/
+@media screen and (min-width: 600px) {
+    .episodios {
+        height: 640px;
+
+        .diagonal-ep {
+            height: 650px;
+        }
+
+        h2 {
+            padding-top: 100px;
+        }
+
+        .podcasts {
+            margin-top: 26px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .pod {
+                width: 50%;
+                height: 152px;
+                margin-bottom: 11px;
+            }
+
+            .pod:first-child {
+                padding-right: 11px;
+            }
+
+            .pod:nth-of-type(3) {
+                padding-right: 11px;
+            }
+
+            .pod:last-child {
+                margin-bottom: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .episodios {
+        h2 {
+            font-size: 48px;
+            padding-top: 130px;
+            line-height: 62px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .episodios {
+        height: 882.5px;
+
+        .diagonal-ep {
+            height: 779px;
+        }
+
+        h2 {
+            padding-top: 186px;
+            margin-left: 100px;
+        }
+
+        .podcasts {
+            margin-left: 100px;
+            margin-right: 100px;
+
+            .pod:first-child {
+                padding-right: 36px;
+                margin-bottom: 72px;
+            }
+
+            .pod:nth-of-type(2) {
+                padding-left: 36px;
+                margin-bottom: 72px;
+            }
+
+            .pod:nth-of-type(3) {
+                padding-right: 36px;
+                margin: 0;
+            }
+
+            .pod:last-child {
+                padding-left: 36px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .episodios {
+        h2 {
+            
+            margin-left: 200px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .episodios {
+        height: 882.5px;
+
+        .diagonal-ep {
+            height: 731px;
+        }
+    }
+}
