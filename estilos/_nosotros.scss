@@ -47,7 +47,6 @@
         }
 
         .venimos-textos {
-
             h2 {
                 font-size: 48px;
             }
@@ -59,8 +58,7 @@
     }
 }
 
-@media screen and (min-width:900px) {
-
+@media screen and (min-width: 900px) {
     .nosotros {
         margin-top: -50px;
         display: flex;
@@ -82,33 +80,31 @@
     }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width: 1000px) {
+    .nosotros {
+        margin-top: 0px;
+        overflow: visible;
+        align-items: flex-start;
 
-.nosotros {
-    margin-top: 0px;
-    overflow: visible;
-    align-items: flex-start;
+        .celular {
+            margin-top: -168px;
+            width: 457.6px;
+        }
 
-    .celular {
-        margin-top: -168px;
-        width: 457.6px;
-    }
+        .venimos-textos {
+            padding-top: 50px;
 
-    .venimos-textos {
-    padding-top: 50px;
-    
-        p {
-            width: 464px;
+            p {
+                width: 464px;
+            }
         }
     }
 }
-}
 
-@media screen and (min-width:1440px) {
-
+@media screen and (min-width: 1440px) {
     .nosotros {
         .venimos-textos {
-padding-left: 62px;
+            padding-left: 62px;
         }
     }
 }

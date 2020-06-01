@@ -20,8 +20,8 @@
     h2 {
         position: relative;
         margin-left: 16px;
-        //padding-right: 16px;
         padding-top: 64px;
+
         @include titulo;
         color: $white;
         z-index: 2;
@@ -136,10 +136,9 @@
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .episodios {
         h2 {
-            
             margin-left: 200px;
         }
     }
