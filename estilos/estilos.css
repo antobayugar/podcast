@@ -61,6 +61,10 @@ nav .menu ul li a:hover {
   text-decoration: line-through;
 }
 
+nav .menu ul li a:active {
+  color: rgba(6, 10, 36, 0.56);
+}
+
 nav .menu input {
   display: none;
   z-index: 2;
