@@ -753,7 +753,7 @@ header button:hover {
     line-height: 62px;
   }
   .temas .temas-cards .icon-box h4 {
-    margin-top: 16x;
+    margin-top: 16px;
     width: 220px;
   }
 }
@@ -767,10 +767,10 @@ header button:hover {
     margin: 0;
   }
   .temas .temas-cards .icon-box:nth-of-type(3) {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .temas .temas-cards .icon-box:last-child {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
